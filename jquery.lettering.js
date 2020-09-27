@@ -15,7 +15,7 @@
 		var text = t.text()
 		, a = text.split(splitter)
 		, inject = '';
-		if (a.length) {
+		if (a && a.length) {
 			$(a).each(function(i, item) {
 				inject += '<span class="'+klass+(i+1)+'" aria-hidden="true">'+item+'</span>'+after;
 			});
